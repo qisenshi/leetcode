@@ -27,9 +27,9 @@ class Solution {
                     // find the answer
                     for (int i = 0; i < sz; i++) {
                         if (numbers[i] == sorted[left])
-                            index.push_back(i + 1);
+                            index.push_back(i);
                         else if (numbers[i] == sorted[right])
-                            index.push_back(i + 1);
+                            index.push_back(i);
                         if (index.size() == 2)
                             return index;
                     }
